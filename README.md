@@ -1,4 +1,5 @@
-# Metadata Fetch
+# Metadata Fetch Plus
+Forked from metadata_fetch_plus `https://github.com/jg-l/metadata_fetch`
 A dart library for extracting metadata in web pages. Supports OpenGraph, Meta, Twitter Cards, and Structured Data (Json-LD)
 
 Available on Pub Dev:
@@ -20,7 +21,7 @@ Metadata:
 ### Extract Metadata for a given URL
 
 ```dart
-import 'package:metadata_fetch/metadata_fetch.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
 
 main() async {
   final myURL = 'https://flutter.dev';
@@ -50,7 +51,7 @@ This method prioritizes Open Graph data, followed by Twitter Card, JSON-LD and f
 
 
 ```dart
-import 'package:metadata_fetch/metadata_fetch.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
 import 'package:http/http.dart' as http;
 
 void main () async {
@@ -76,7 +77,7 @@ void main () async {
 #### Manually specify which Metadata parser to use
 
 ```dart
-import 'package:metadata_fetch/metadata_fetch.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
 import 'package:http/http.dart' as http;
 
 void main () async {
@@ -116,7 +117,7 @@ If the parsers cannot extract a URL from the document, you may optionally provid
 This URL will be added in the final `Metadata` structure, and is used to resolve images with relative URLs (non-absolute URLs).
 
 ```dart
-import 'package:metadata_fetch/metadata_fetch.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
 import 'package:http/http.dart' as http;
 
 void main () async {

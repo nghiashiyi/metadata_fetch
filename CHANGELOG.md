@@ -1,3 +1,7 @@
+## 1.0.0
+- Upgraded all deps 
+- Upgraded to use latest Flutter version & dart 3
+
 ## 0.4.1
 - Improve Documentation 
 

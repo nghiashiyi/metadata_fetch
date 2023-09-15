@@ -1,4 +1,4 @@
-import 'package:metadata_fetch/metadata_fetch.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
 import 'package:http/http.dart' as http;
 
 void main() async {

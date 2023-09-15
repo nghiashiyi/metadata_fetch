@@ -1,5 +1,5 @@
 import 'package:html/dom.dart';
-import 'package:metadata_fetch/src/utils/util.dart';
+import 'package:metadata_fetch_plus/src/utils/util.dart';
 
 import 'base_parser.dart';
 

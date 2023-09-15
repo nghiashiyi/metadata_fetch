@@ -1,8 +1,6 @@
-import 'package:metadata_fetch/metadata_fetch.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
 import 'package:html/parser.dart' as html;
 import 'package:http/http.dart' as http;
-import 'package:metadata_fetch/src/parsers/jsonld_parser.dart';
-import 'package:metadata_fetch/src/parsers/parsers.dart';
 import 'package:test/test.dart';
 
 // TODO: Use a Mock Server for testing

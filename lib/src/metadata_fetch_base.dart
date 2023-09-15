@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'package:html/dom.dart';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' as parser;
-import 'package:metadata_fetch/metadata_fetch.dart';
-import 'package:metadata_fetch/src/parsers/parsers.dart';
-import 'package:metadata_fetch/src/utils/util.dart';
+import 'package:metadata_fetch_plus/metadata_fetch_plus.dart';
+import 'package:metadata_fetch_plus/src/parsers/parsers.dart';
+import 'package:metadata_fetch_plus/src/utils/util.dart';
 import 'package:string_validator/string_validator.dart';
 
 class MetadataFetch {
