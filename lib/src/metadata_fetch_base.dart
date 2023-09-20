@@ -9,7 +9,7 @@ import 'package:string_validator/string_validator.dart';
 
 class MetadataFetch {
   /// Fetches a [url], validates it, and returns [Metadata].
-  static Future<Metadata?> extract(String url) async {
+  static Future<Metadata?> extract(String url, {Map<String, String>? headers}) async {
     if (!isURL(url)) {
       return null;
     }
@@ -20,7 +20,7 @@ class MetadataFetch {
     defaultOutput.description = url;
 
     // Make our network call
-    final response = await http.get(Uri.parse(url));
+    final response = await http.get(Uri.parse(url), headers: headers);
     final headerContentType = response.headers['content-type'];
 
     if (headerContentType != null && headerContentType.startsWith(r'image/')) {
